@@ -1,0 +1,43 @@
+/* Apply to the wrapper around each waypoint (or give a class .waypoint-form) */
+.waypoint-form {
+    padding: 8px;          /* inner spacing */
+    margin-bottom: 6px;   /* space between different waypoints */
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  /* Add spacing between the label-select-radius elements in the header (or in the h4) */
+  .waypoint-form header,
+  .waypoint-form .waypoint-header { /* or whichever element wraps type, label, radius */
+    display: flex;
+    align-items: center;
+    gap: 8px;  /* horizontal gap between fields */
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+
+  .waypoint-header input[type="text"] {
+  color: var(--text-color);   /* or any color you want */
+}
+  
+  /* Make input boxes (latitude, longitude, radius, etc.) fill more width */
+  .waypoint-form input[type="text"],
+  .waypoint-form input[type="number"],
+  .waypoint-form select {
+    box-sizing: border-box;
+    padding: 4px 3px;
+    font-size: 1rem;
+    margin: 4px 0;
+  }
+  
+  /* If you want the lat / lon fields side by side, wrap them in a flex container */
+  .waypoint-form .latlon-row {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* Then each input inside can flex (share the row) */
+  .waypoint-form .latlon-row input {
+    flex: 1;  /* each input will take half the width (minus gap) */
+  }
+  

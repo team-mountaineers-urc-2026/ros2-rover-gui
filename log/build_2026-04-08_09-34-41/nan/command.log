@@ -1,0 +1,2 @@
+Invoking command in '/home/lenovo/ros2-rover-gui/build/nan': /usr/bin/cmake /home/lenovo/ros2-rover-gui/node_modules/nan -DCMAKE_INSTALL_PREFIX=/home/lenovo/ros2-rover-gui/install/nan
+Invoked command in '/home/lenovo/ros2-rover-gui/build/nan' returned '-2': /usr/bin/cmake /home/lenovo/ros2-rover-gui/node_modules/nan -DCMAKE_INSTALL_PREFIX=/home/lenovo/ros2-rover-gui/install/nan

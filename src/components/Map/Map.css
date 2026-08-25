@@ -1,0 +1,606 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+#app-container {
+  display: flex;
+  align-items:center;
+  gap: 16px;
+  width: 80vw;
+  height: 100%;
+  margin: auto;
+}
+.map-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+.map-row {
+  display: flex;
+  gap: 16px;
+  height: 85vh;
+  align-items: stretch;
+}
+/* Map container */
+.map-container {
+  flex: 3;
+  height: 100%;
+  border: 2px solid gray;
+  position: relative;
+}
+
+/* Sidebar panel on the right */
+.sidebar {
+  flex: 1.5;   /* fixed useful control panel width */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  background-color: var(--bg-panel);
+  box-sizing: border-box;
+}
+
+.sidebar-controls
+{
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  border-bottom: 1px solid #ddd;
+  gap: 5px;
+  padding-bottom: 10px;
+
+}
+
+.sidebar .sidebar-header {
+  background-color: var(--bg-panel);
+  border-bottom: 1px solid #ddd;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.sidebar .sidebar-content {
+  flex: 1 1 auto;
+  color: var(--text-primary);
+  padding-top: 10px;
+  overflow-y: auto;
+ 
+}
+
+
+button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 0.5rem .5rem;
+  margin: 0.25rem .25rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.import-panel-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.import-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  border-top: 1px solid #444;
+}
+
+.import-panel.open {
+  max-height: 500px;
+  border-top: 1px solid #444;
+}
+
+.import-toggle {
+  margin-top: 10px;
+  width: 100%;
+}
+.sidebar input[type="number"],
+.sidebar input[type="text"] {
+  padding: 0.4rem;
+  font-size: 1rem;
+  width: 60px;
+  margin-right: 0.5rem;
+}
+
+
+.sidebar ul {
+  padding: 0;
+  color: var(--text-primary);
+  margin: 0;
+  list-style: none;
+}
+
+.arrived-banner {
+  position: sticky;
+  top: 0;
+  background: green;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  z-index: 10;
+}
+
+
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.waypoints-header {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.waypoints-header h2 {
+  margin: 0;
+}
+
+.waypoints-header button {
+
+  margin-left: auto;
+}
+
+/* Popup shown when a marker is selected on the map. */
+.marker-popup {
+  max-width: 280px !important;
+  max-height: none !important;
+  padding: 4px !important;
+  font-size: 12px;
+  color: #000;
+}
+
+
+.marker-popup .popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 2px;
+color: #000;
+
+}
+
+
+.marker-popup .popup-title {
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+  margin: 0;
+  flex-grow: 1;
+  white-space: nowrap;
+
+  
+}
+
+
+.marker-popup .popup-button {
+  border: none;
+  padding: 2px 2px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 13px;
+
+}
+
+.marker-popup .popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0 2px 0;
+  color: #000;
+
+}
+
+
+.marker-popup .popup-close {
+  position: absolute;
+  font-size: 20px;
+  top: 2px;
+  right: 4px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  padding: 0;
+  
+}
+
+.marker-popup .delete-button:hover {
+  background: #005fa3;
+}
+
+.rover-telemetry-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+
+  color: white;
+  padding: 12px 16px;
+
+  border-radius: 6px;
+  border: 1px solid #444;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  z-index: 10;
+  pointer-events: none;
+
+  min-width: 180px;
+}
+
+.rover-telemetry-overlay strong {
+  float: right;
+}
+
+.overlay-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 4px;
+}
+
+.import-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.field input,
+.field select {
+  width: 100%;
+}
+
+.search-pattern-panel {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-pattern-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--text-invert);
+    margin-bottom: 4px;
+}
+
+.search-pattern-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--text-invert);
+}
+
+.pattern-btn.commit {
+    background-color: var(--button-color);
+    color: white;
+}
+
+
+.search-pattern-panel label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.search-pattern-panel select,
+.search-pattern-panel input {
+  font-size: 12px;
+  padding: 4px;
+}
+
+.search-pattern-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+.add-waypoint-button {
+  grid-column: span 4;
+}
+
+.import-divider {
+  grid-column: span 4;
+  border-top: 1px solid #555;
+  margin: 8px 0;
+}
+
+.csv-controls {
+  grid-column: span 4;
+  display: flex;
+  gap: 8px;
+}
+.manual-import-panel h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.manual-import-panel .manual-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.manual-import-panel .manual-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.manual-import-panel .manual-form input[type="text"],
+.manual-import-panel .manual-form input[type="number"] {
+  padding: 0.4rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.manual-import-panel .manual-form button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.manual-import-panel .manual-form button:hover {
+  background-color: #005fa3;
+}
+
+.manual-import-panel .manual-form button:active {
+  transform: scale(0.97);
+}
+
+.manual-import-panel .file-input-container {
+  margin-top: 1rem;
+}
+
+#csv-save-button {
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+
+.map-wrapper {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.latlon-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-family: monospace;
+}
+
+.map-jump-controls {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid gray;
+  background-color: var(--bg-panel);
+
+  /* Force left/right alignment */
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Adds a scrollbar ONLY if the screen gets too tiny */
+}
+
+/* Handles the buttons on the left */
+.left-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap; /* Allows buttons to wrap internally if needed */
+}
+
+/* Handles the dropdown on the right */
+.point-type-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0; /* Prevents the dropdown from being squished */
+}
+
+.point-type-selector label {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.point-type-selector select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #888;
+  background-color: var(--bg-panel);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.point-type-selector select:hover {
+  border-color: #007acc; /* Fallback if var fails */
+  border-color: var(--button-hover, #007acc);
+}
+
+.point-type-selector select:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.25);
+}
+
+.manual-import-panel .file-input-container .file-upload-label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.manual-import-panel .file-input-container .file-upload-label:hover {
+  background-color: #005fa3;
+}
+
+.manual-import-panel .file-input-container .file-upload-label:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 800px) {
+  #app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #ccc;
+    padding: 0.5rem;
+    background-color: var(--bg-main);
+  }
+}
+
+
+.shortcuts-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10; /* Ensures it renders above the map */
+}
+
+.shortcuts-menu {
+    background: rgba(20, 20, 20, 0.85);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    font-size: 14px;
+    animation: slideUp 0.2s ease-out;
+}
+
+.shortcuts-menu h4 {
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #555;
+    font-size: 14px;
+    text-align: center;
+}
+
+.shortcuts-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.shortcuts-menu li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.shortcuts-menu kbd {
+    background: #333;
+    border: 1px solid #666;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: monospace;
+    font-size: 12px;
+    color: #e0e0e0;
+}
+
+.shortcuts-toggle-btn {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    transition: background-color 0.2s;
+}
+
+.shortcuts-toggle-btn:hover {
+    background-color: #555;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

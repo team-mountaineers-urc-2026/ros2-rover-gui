@@ -1,0 +1,43 @@
+[0.010s] Invoking command in '/home/lenovo/ros2-rover-gui/build/nan': /usr/bin/cmake /home/lenovo/ros2-rover-gui/node_modules/nan -DCMAKE_INSTALL_PREFIX=/home/lenovo/ros2-rover-gui/install/nan
+[0.060s] -- The C compiler identification is GNU 11.4.0
+[0.110s] -- The CXX compiler identification is GNU 11.4.0
+[0.116s] -- Detecting C compiler ABI info
+[0.183s] -- Detecting C compiler ABI info - done
+[0.188s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.188s] -- Detecting C compile features
+[0.188s] -- Detecting C compile features - done
+[0.191s] -- Detecting CXX compiler ABI info
+[0.259s] -- Detecting CXX compiler ABI info - done
+[0.268s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.268s] -- Detecting CXX compile features
+[0.269s] -- Detecting CXX compile features - done
+[0.577s] -- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed 
+[0.887s] npm WARN reify Removing non-directory /home/lenovo/ros2-rover-gui/node_modules/nan/node_modules
+[9.328s] npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[9.395s] npm WARN deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[9.451s] npm WARN deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[9.451s] npm WARN deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[9.451s] npm WARN deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[9.889s] npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[10.049s] npm WARN deprecated cryptiles@2.0.5: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+[10.192s] npm WARN deprecated sntp@1.0.9: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+[10.210s] npm WARN deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+[10.344s] npm WARN deprecated npmlog@6.0.2: This package is no longer supported.
+[10.354s] npm WARN deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[10.362s] npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+[10.415s] npm WARN deprecated boom@2.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+[10.452s] npm WARN deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[10.471s] npm WARN deprecated glob@5.0.15: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[10.473s] npm WARN deprecated har-validator@4.2.1: this library is no longer supported
+[10.478s] npm WARN deprecated glob@4.5.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[10.488s] npm WARN deprecated hoek@2.16.3: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+[10.511s] npm WARN deprecated gauge@4.0.4: This package is no longer supported.
+[10.546s] npm WARN deprecated request@2.81.0: request has been deprecated, see https://github.com/request/request/issues/3142
+[10.563s] npm WARN deprecated hawk@3.1.3: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+[10.622s] npm WARN deprecated tap@0.7.1: Versions of tap before v18 are no longer maintained. Please upgrade.
+[11.171s] -- Configuring done
+[11.174s] -- Generating done
+[11.175s] -- Build files have been written to: /home/lenovo/ros2-rover-gui/build/nan
+[11.180s] Invoked command in '/home/lenovo/ros2-rover-gui/build/nan' returned '0': /usr/bin/cmake /home/lenovo/ros2-rover-gui/node_modules/nan -DCMAKE_INSTALL_PREFIX=/home/lenovo/ros2-rover-gui/install/nan
+[11.182s] Invoking command in '/home/lenovo/ros2-rover-gui/build/nan': /usr/bin/cmake --build /home/lenovo/ros2-rover-gui/build/nan -- -j8 -l8
+[11.226s] Invoked command in '/home/lenovo/ros2-rover-gui/build/nan' returned '0': /usr/bin/cmake --build /home/lenovo/ros2-rover-gui/build/nan -- -j8 -l8

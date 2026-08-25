@@ -1,0 +1,1332 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://wvuurc.onshape.com/documents/bfc7431dac3681d28ea6e8e9/w/da907df8dfd31f611b0f01c6/e/a9629945f9a09abf315e70e0 -->
+<robot name="arm">
+  <link name="world"/>
+
+    <joint name="fixed_to_ground" type="fixed">
+      <parent link="world"/>
+      <child link="tm26_211_p01_p_linear_rail"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+  <!-- Link tm26_211_p01_p_linear_rail -->
+  <link name="tm26_211_p01_p_linear_rail">
+    <inertial>
+      <origin xyz="0.020832 -0.459349 0.202478" rpy="0 0 0"/>
+      <mass value="0.8596"/>
+      <inertia ixx="0.00125279" ixy="-4.23396e-06" ixz="0.00131982" iyy="0.028582" iyz="7.35961e-07" izz="0.0296075"/>
+    </inertial>
+    <!-- Part tm26_211_p01_p_linear_rail -->
+    <visual>
+      <origin xyz="0.0120867 -0.527436 0.195153" rpy="9.60069e-15 -0.0523599 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_211_p01_p_linear_rail.obj"/>
+      </geometry>
+      <material name="tm26_211_p01_p_linear_rail_material">
+        <color rgba="0.0235294 0.298039 0.568627 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0120867 -0.527436 0.195153" rpy="9.60069e-15 -0.0523599 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_211_p01_p_linear_rail.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part rmd_x4_36_part_1 -->
+    <visual>
+      <origin xyz="0.347743 -0.459506 0.196588" rpy="3.08882 -0.124899 -1.56422"/>
+      <geometry>
+        <mesh filename="package://assets/rmd_x4_36_part_1.obj"/>
+      </geometry>
+      <material name="rmd_x4_36_part_1_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.347743 -0.459506 0.196588" rpy="3.08882 -0.124899 -1.56422"/>
+      <geometry>
+        <mesh filename="package://assets/rmd_x4_36_part_1.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part 9867k123_15_mm_wide_x_1000_mm_long_guide_rail_for_47_mm_wide_sleeve_bearing_carriage_drill_baby_drill -->
+    <visual>
+      <origin xyz="0.215317 -0.497172 0.192263" rpy="1.51844 2.39897e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/9867k123_15_mm_wide_x_1000_mm_long_guide_rail_for_47_mm_wide_sleeve_bearing_carriage_drill_baby_drill.obj"/>
+      </geometry>
+      <material name="9867k123_15_mm_wide_x_1000_mm_long_guide_rail_for_47_mm_wide_sleeve_bearing_carriage_drill_baby_drill_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.215317 -0.497172 0.192263" rpy="1.51844 2.39897e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/9867k123_15_mm_wide_x_1000_mm_long_guide_rail_for_47_mm_wide_sleeve_bearing_carriage_drill_baby_drill.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part 9867k123_15_mm_wide_x_1000_mm_long_guide_rail_for_47_mm_wide_sleeve_bearing_carriage -->
+    <visual>
+      <origin xyz="0.215317 -0.421839 0.192263" rpy="1.51844 -1.45774e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/9867k123_15_mm_wide_x_1000_mm_long_guide_rail_for_47_mm_wide_sleeve_bearing_carriage.obj"/>
+      </geometry>
+      <material name="9867k123_15_mm_wide_x_1000_mm_long_guide_rail_for_47_mm_wide_sleeve_bearing_carriage_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.215317 -0.421839 0.192263" rpy="1.51844 -1.45774e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/9867k123_15_mm_wide_x_1000_mm_long_guide_rail_for_47_mm_wide_sleeve_bearing_carriage.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link motor_mount_same_hieght_new_motor -->
+  <link name="motor_mount_same_hieght_new_motor">
+    <inertial>
+      <origin xyz="0.0376706 -0.0349236 -0.0331904" rpy="0 0 0"/>
+      <mass value="0.738529"/>
+      <inertia ixx="0.00212127" ixy="-8.68933e-08" ixz="-5.35019e-08" iyy="0.00180862" iyz="2.26051e-05" izz="0.00206463"/>
+    </inertial>
+    <!-- Part 9867k2_sleeve_bearing_carriage -->
+    <visual>
+      <origin xyz="0.0753333 0.0015 -0.034" rpy="1.5708 9.32961e-17 -3.48552e-16"/>
+      <geometry>
+        <mesh filename="package://assets/9867k2_sleeve_bearing_carriage.obj"/>
+      </geometry>
+      <material name="9867k2_sleeve_bearing_carriage_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0753333 0.0015 -0.034" rpy="1.5708 9.32961e-17 -3.48552e-16"/>
+      <geometry>
+        <mesh filename="package://assets/9867k2_sleeve_bearing_carriage.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part elbow_link_mount -->
+    <visual>
+      <origin xyz="0.0376667 -0.082 0.0102625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/elbow_link_mount.obj"/>
+      </geometry>
+      <material name="elbow_link_mount_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0376667 -0.082 0.0102625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/elbow_link_mount.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part right_spacer -->
+    <visual>
+      <origin xyz="0.0376667 -0.082 0.0102625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/right_spacer.obj"/>
+      </geometry>
+      <material name="right_spacer_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0376667 -0.082 0.0102625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/right_spacer.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part mounting_plate -->
+    <visual>
+      <origin xyz="0.0376667 -0.0085 -0.034" rpy="1.5708 -5.0592e-16 -4.20323e-16"/>
+      <geometry>
+        <mesh filename="package://assets/mounting_plate.obj"/>
+      </geometry>
+      <material name="mounting_plate_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0376667 -0.0085 -0.034" rpy="1.5708 -5.0592e-16 -4.20323e-16"/>
+      <geometry>
+        <mesh filename="package://assets/mounting_plate.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_mount_same_hieght_new_motor -->
+    <visual>
+      <origin xyz="0.0376667 -0.082 0.011" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor_mount_same_hieght_new_motor.obj"/>
+      </geometry>
+      <material name="motor_mount_same_hieght_new_motor_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0376667 -0.082 0.011" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor_mount_same_hieght_new_motor.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_mount_same_hieght_new_motor_2 -->
+    <visual>
+      <origin xyz="0.0376667 -0.082 -0.0837625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor_mount_same_hieght_new_motor.obj"/>
+      </geometry>
+      <material name="motor_mount_same_hieght_new_motor_2_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0376667 -0.082 -0.0837625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor_mount_same_hieght_new_motor.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part left_spacer -->
+    <visual>
+      <origin xyz="0.0376667 -0.082 -0.0035625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/left_spacer.obj"/>
+      </geometry>
+      <material name="left_spacer_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0376667 -0.082 -0.0035625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/left_spacer.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part sholder_link_mount -->
+    <visual>
+      <origin xyz="0.0376667 -0.082 -0.0035625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/sholder_link_mount.obj"/>
+      </geometry>
+      <material name="sholder_link_mount_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0376667 -0.082 -0.0035625" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/sholder_link_mount.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part 9867k2_sleeve_bearing_carriage_2 -->
+    <visual>
+      <origin xyz="0 0.0015 -0.034" rpy="1.5708 -4.04519e-31 2.93012e-31"/>
+      <geometry>
+        <mesh filename="package://assets/9867k2_sleeve_bearing_carriage.obj"/>
+      </geometry>
+      <material name="9867k2_sleeve_bearing_carriage_2_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0015 -0.034" rpy="1.5708 -4.04519e-31 2.93012e-31"/>
+      <geometry>
+        <mesh filename="package://assets/9867k2_sleeve_bearing_carriage.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link tm25_221_p18_m_four_bar_insert_fixed -->
+  <link name="tm25_221_p18_m_four_bar_insert_fixed">
+    <inertial>
+      <origin xyz="0.0226711 0.186552 -0.0307679" rpy="0 0 0"/>
+      <mass value="0.775294"/>
+      <inertia ixx="0.0207559" ixy="0.000330729" ixz="-4.66826e-06" iyy="0.00112819" iyz="5.1623e-05" izz="0.0213022"/>
+    </inertial>
+    <!-- Part tm25_231_p06_top_spacer -->
+    <visual>
+      <origin xyz="-0.035 0.375378 -0.032825" rpy="-3.14159 -8.75572e-15 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_231_p06_top_spacer.obj"/>
+      </geometry>
+      <material name="tm25_231_p06_top_spacer_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.035 0.375378 -0.032825" rpy="-3.14159 -8.75572e-15 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_231_p06_top_spacer.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part 92981a203_no_threads_alloy_steel_shoulder_screws -->
+    <visual>
+      <origin xyz="0.0535819 0.390956 -0.0308017" rpy="3.14159 5.60783e-15 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/92981a203_no_threads_alloy_steel_shoulder_screws.obj"/>
+      </geometry>
+      <material name="92981a203_no_threads_alloy_steel_shoulder_screws_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0535819 0.390956 -0.0308017" rpy="3.14159 5.60783e-15 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/92981a203_no_threads_alloy_steel_shoulder_screws.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_221_p08_m_free_push_plate -->
+    <visual>
+      <origin xyz="0.0560792 -0.0471435 -0.0399277" rpy="3.14159 -1.03606e-15 0.87175"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_221_p08_m_free_push_plate.obj"/>
+      </geometry>
+      <material name="tm25_221_p08_m_free_push_plate_material">
+        <color rgba="0.372549 0.372549 0.372549 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0560792 -0.0471435 -0.0399277" rpy="3.14159 -1.03606e-15 0.87175"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_221_p08_m_free_push_plate.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p02_hockey_stickarm -->
+    <visual>
+      <origin xyz="0.040822 0.022 -0.059955" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p02_hockey_stickarm.obj"/>
+      </geometry>
+      <material name="tm25_235s_p02_hockey_stickarm_material">
+        <color rgba="0.196078 0.196078 0.196078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.040822 0.022 -0.059955" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p02_hockey_stickarm.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p05_bicept_insert -->
+    <visual>
+      <origin xyz="-0.101171 0.340627 -0.0477375" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p05_bicept_insert.obj"/>
+      </geometry>
+      <material name="tm25_235s_p05_bicept_insert_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.101171 0.340627 -0.0477375" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p05_bicept_insert.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p12_clevis_side -->
+    <visual>
+      <origin xyz="-0.0102176 0.294889 -0.042175" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p12_clevis_side.obj"/>
+      </geometry>
+      <material name="tm25_235s_p12_clevis_side_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0102176 0.294889 -0.042175" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p12_clevis_side.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_231_p06_top_spacer_2 -->
+    <visual>
+      <origin xyz="0.035 0.375378 -0.0299125" rpy="2.79273e-14 2.88836e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_231_p06_top_spacer.obj"/>
+      </geometry>
+      <material name="tm25_231_p06_top_spacer_2_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.035 0.375378 -0.0299125" rpy="2.79273e-14 2.88836e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_231_p06_top_spacer.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_231_p15_pusher -->
+    <visual>
+      <origin xyz="0.388086 -0.326248 -0.0322804" rpy="-3.14159 1.02027e-15 -2.26984"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_231_p15_pusher.obj"/>
+      </geometry>
+      <material name="tm25_231_p15_pusher_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.388086 -0.326248 -0.0322804" rpy="-3.14159 1.02027e-15 -2.26984"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_231_p15_pusher.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p01_hockey_stickarm -->
+    <visual>
+      <origin xyz="0.040822 0.022 -0.0622175" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p01_hockey_stickarm.obj"/>
+      </geometry>
+      <material name="tm25_235s_p01_hockey_stickarm_material">
+        <color rgba="0.196078 0.196078 0.196078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.040822 0.022 -0.0622175" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p01_hockey_stickarm.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p07_clevis_insert -->
+    <visual>
+      <origin xyz="0.0969201 0.352075 -0.0224125" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p07_clevis_insert.obj"/>
+      </geometry>
+      <material name="tm25_235s_p07_clevis_insert_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0969201 0.352075 -0.0224125" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p07_clevis_insert.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p13_clevis_side -->
+    <visual>
+      <origin xyz="0.0297824 0.051023 -0.01765" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p13_clevis_side.obj"/>
+      </geometry>
+      <material name="tm25_235s_p13_clevis_side_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0297824 0.051023 -0.01765" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p13_clevis_side.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_221_p18_m_four_bar_insert_fixed -->
+    <visual>
+      <origin xyz="-1.11022e-16 -0.0732625 -0.0355473" rpy="-1.5708 -1.041e-18 -7.25092e-18"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_221_p18_m_four_bar_insert_fixed.obj"/>
+      </geometry>
+      <material name="tm25_221_p18_m_four_bar_insert_fixed_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.11022e-16 -0.0732625 -0.0355473" rpy="-1.5708 -1.041e-18 -7.25092e-18"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_221_p18_m_four_bar_insert_fixed.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p06_clevis_insert -->
+    <visual>
+      <origin xyz="0.0209201 -0.00616315 -0.0374125" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p06_clevis_insert.obj"/>
+      </geometry>
+      <material name="tm25_235s_p06_clevis_insert_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0209201 -0.00616315 -0.0374125" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p06_clevis_insert.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p11_clevis_hockey_stick -->
+    <visual>
+      <origin xyz="0.159404 0.0199558 -0.03463" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p11_clevis_hockey_stick.obj"/>
+      </geometry>
+      <material name="tm25_235s_p11_clevis_hockey_stick_material">
+        <color rgba="0.196078 0.196078 0.196078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.159404 0.0199558 -0.03463" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p11_clevis_hockey_stick.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p03_bicept_insert -->
+    <visual>
+      <origin xyz="-0.0281714 0.340627 2.19269e-15" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p03_bicept_insert.obj"/>
+      </geometry>
+      <material name="tm25_235s_p03_bicept_insert_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0281714 0.340627 2.19269e-15" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p03_bicept_insert.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part 92981a203_no_threads_alloy_steel_shoulder_screws_2 -->
+    <visual>
+      <origin xyz="0.0535819 -0.0450442 -0.029675" rpy="3.14159 4.89888e-15 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/92981a203_no_threads_alloy_steel_shoulder_screws.obj"/>
+      </geometry>
+      <material name="92981a203_no_threads_alloy_steel_shoulder_screws_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0535819 -0.0450442 -0.029675" rpy="3.14159 4.89888e-15 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/92981a203_no_threads_alloy_steel_shoulder_screws.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p09_clevis_side -->
+    <visual>
+      <origin xyz="0.0297824 0.151023 -0.0374125" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p09_clevis_side.obj"/>
+      </geometry>
+      <material name="tm25_235s_p09_clevis_side_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0297824 0.151023 -0.0374125" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p09_clevis_side.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p08_clevis_side -->
+    <visual>
+      <origin xyz="-0.0102176 0.194889 -0.0224125" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p08_clevis_side.obj"/>
+      </geometry>
+      <material name="tm25_235s_p08_clevis_side_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0102176 0.194889 -0.0224125" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p08_clevis_side.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_221_p13_m_four_bar_insert_free -->
+    <visual>
+      <origin xyz="7.77156e-16 -0.0732625 -0.0361902" rpy="-1.5708 -1.2725e-14 2.55929e-14"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_221_p13_m_four_bar_insert_free.obj"/>
+      </geometry>
+      <material name="tm25_221_p13_m_four_bar_insert_free_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="7.77156e-16 -0.0732625 -0.0361902" rpy="-1.5708 -1.2725e-14 2.55929e-14"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_221_p13_m_four_bar_insert_free.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link tm25_231_p05_forearm_link -->
+  <link name="tm25_231_p05_forearm_link">
+    <inertial>
+      <origin xyz="0.00541642 0.415505 -0.00806876" rpy="0 0 0"/>
+      <mass value="2.18555"/>
+      <inertia ixx="0.0294525" ixy="0.00131691" ixz="-5.47721e-06" iyy="0.00222317" iyz="4.78769e-05" izz="0.0306164"/>
+    </inertial>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="0.001 0.23 -0.0075" rpy="-1.03416e-14 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/part_1.obj"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001 0.23 -0.0075" rpy="-1.03416e-14 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/part_1.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part 94868a046_female_threaded_hex_standoff -->
+    <visual>
+      <origin xyz="0.001 0.41 -0.0075" rpy="3.14159 4.35846e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/94868a046_female_threaded_hex_standoff.obj"/>
+      </geometry>
+      <material name="94868a046_female_threaded_hex_standoff_material">
+        <color rgba="0.8 0.8 0.8 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001 0.41 -0.0075" rpy="3.14159 4.35846e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/94868a046_female_threaded_hex_standoff.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_2404_pitch_motor_bearing_mount -->
+    <visual>
+      <origin xyz="0.001 0.460327 0.00875" rpy="-8.31256e-16 -2.84914e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2404_pitch_motor_bearing_mount.obj"/>
+      </geometry>
+      <material name="tm25_2404_pitch_motor_bearing_mount_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001 0.460327 0.00875" rpy="-8.31256e-16 -2.84914e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2404_pitch_motor_bearing_mount.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part 94868a046_female_threaded_hex_standoff_2 -->
+    <visual>
+      <origin xyz="0.001 0.375 -0.0075" rpy="3.14159 4.33071e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/94868a046_female_threaded_hex_standoff.obj"/>
+      </geometry>
+      <material name="94868a046_female_threaded_hex_standoff_2_material">
+        <color rgba="0.8 0.8 0.8 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001 0.375 -0.0075" rpy="3.14159 4.33071e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/94868a046_female_threaded_hex_standoff.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part permanant_wrist_spacer -->
+    <visual>
+      <origin xyz="0.001 0.42 -0.0075" rpy="-1.5708 -2.03348e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/permanant_wrist_spacer.obj"/>
+      </geometry>
+      <material name="permanant_wrist_spacer_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001 0.42 -0.0075" rpy="-1.5708 -2.03348e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/permanant_wrist_spacer.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_231_p05_forearm_link -->
+    <visual>
+      <origin xyz="0.001 -0.0718466 -0.0075" rpy="-3.14159 -2.4781e-14 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_231_p05_forearm_link.obj"/>
+      </geometry>
+      <material name="tm25_231_p05_forearm_link_material">
+        <color rgba="0.196078 0.196078 0.196078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001 -0.0718466 -0.0075" rpy="-3.14159 -2.4781e-14 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_231_p05_forearm_link.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_2401_pitch_motor_back_hockey_stick_mount -->
+    <visual>
+      <origin xyz="0.001 0.460327 0.00875" rpy="-8.31256e-16 -2.84914e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2401_pitch_motor_back_hockey_stick_mount.obj"/>
+      </geometry>
+      <material name="tm25_2401_pitch_motor_back_hockey_stick_mount_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001 0.460327 0.00875" rpy="-8.31256e-16 -2.84914e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2401_pitch_motor_back_hockey_stick_mount.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_2402_pitch_motor_front_hockey_stick_mount -->
+    <visual>
+      <origin xyz="0.001 0.460327 0.00875" rpy="-8.31256e-16 -2.84914e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2402_pitch_motor_front_hockey_stick_mount.obj"/>
+      </geometry>
+      <material name="tm25_2402_pitch_motor_front_hockey_stick_mount_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001 0.460327 0.00875" rpy="-8.31256e-16 -2.84914e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2402_pitch_motor_front_hockey_stick_mount.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_232s_p24_a_camera_mount_bottom -->
+    <visual>
+      <origin xyz="0.0155 0.28 -0.0385" rpy="-3.14159 6.17518e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_232s_p24_a_camera_mount_bottom.obj"/>
+      </geometry>
+      <material name="tm25_232s_p24_a_camera_mount_bottom_material">
+        <color rgba="0.6 0.6 0.6 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0155 0.28 -0.0385" rpy="-3.14159 6.17518e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_232s_p24_a_camera_mount_bottom.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_232s_p23_a_camera_mount_top -->
+    <visual>
+      <origin xyz="0.0155 0.27 -0.0075" rpy="-3.14159 4.92795e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_232s_p23_a_camera_mount_top.obj"/>
+      </geometry>
+      <material name="tm25_232s_p23_a_camera_mount_top_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0155 0.27 -0.0075" rpy="-3.14159 4.92795e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_232s_p23_a_camera_mount_top.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part logitech_c920 -->
+    <visual>
+      <origin xyz="0.110963 0.280605 0.0425" rpy="2.38415e-14 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/logitech_c920.obj"/>
+      </geometry>
+      <material name="logitech_c920_material">
+        <color rgba="0.796078 0.823529 0.937255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.110963 0.280605 0.0425" rpy="2.38415e-14 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/logitech_c920.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part rmd_x6_s2_v2 -->
+    <visual>
+      <origin xyz="0.532089 0.104509 -0.02325" rpy="1.5708 -8.25721e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/rmd_x6_s2_v2.obj"/>
+      </geometry>
+      <material name="rmd_x6_s2_v2_material">
+        <color rgba="0.117647 0.117647 0.117647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.532089 0.104509 -0.02325" rpy="1.5708 -8.25721e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/rmd_x6_s2_v2.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_235s_p04_oog_elbow -->
+    <visual>
+      <origin xyz="0.166045 0.287659 0" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p04_oog_elbow.obj"/>
+      </geometry>
+      <material name="tm25_235s_p04_oog_elbow_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.166045 0.287659 0" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_235s_p04_oog_elbow.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link tm25_2405_motor_face_spacer -->
+  <link name="tm25_2405_motor_face_spacer">
+    <inertial>
+      <origin xyz="-0.0603351 -0.00486952 0.0340212" rpy="0 0 0"/>
+      <mass value="1.62198"/>
+      <inertia ixx="0.00136521" ixy="4.17542e-06" ixz="4.90325e-05" iyy="0.00141353" iyz="3.83609e-06" izz="0.00116592"/>
+    </inertial>
+    <!-- Part tm25_2405_motor_face_spacer -->
+    <visual>
+      <origin xyz="0 -1.11022e-16 0.048" rpy="-1.73287e-15 2.96818e-15 0.0919779"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2405_motor_face_spacer.obj"/>
+      </geometry>
+      <material name="tm25_2405_motor_face_spacer_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -1.11022e-16 0.048" rpy="-1.73287e-15 2.96818e-15 0.0919779"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2405_motor_face_spacer.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part part_16 -->
+    <visual>
+      <origin xyz="-0.0721935 -0.006659 0.034065" rpy="1.0472 -1.61276e-14 -3.04961"/>
+      <geometry>
+        <mesh filename="package://assets/part_16.obj"/>
+      </geometry>
+      <material name="part_16_material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0721935 -0.006659 0.034065" rpy="1.0472 -1.61276e-14 -3.04961"/>
+      <geometry>
+        <mesh filename="package://assets/part_16.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_2501_end_effector_motor_mount -->
+    <visual>
+      <origin xyz="-0.000625719 0.00678373 0.0219088" rpy="-2.63079 9.9952e-15 0.0919779"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2501_end_effector_motor_mount.obj"/>
+      </geometry>
+      <material name="tm25_2501_end_effector_motor_mount_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000625719 0.00678373 0.0219088" rpy="-2.63079 9.9952e-15 0.0919779"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2501_end_effector_motor_mount.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_2406_pitch_to_roll_attachment_v2 -->
+    <visual>
+      <origin xyz="-1.33227e-15 -8.88178e-16 0.048" rpy="-1.73287e-15 2.96818e-15 0.0919779"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2406_pitch_to_roll_attachment_v2.obj"/>
+      </geometry>
+      <material name="tm25_2406_pitch_to_roll_attachment_v2_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.33227e-15 -8.88178e-16 0.048" rpy="-1.73287e-15 2.96818e-15 0.0919779"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_2406_pitch_to_roll_attachment_v2.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part m4x8mm_90991a121 -->
+    <visual>
+      <origin xyz="-0.0851307 -0.00195041 0.0439499" rpy="-1.5708 -0.510804 1.66277"/>
+      <geometry>
+        <mesh filename="package://assets/m4x8mm_90991a121.obj"/>
+      </geometry>
+      <material name="m4x8mm_90991a121_material">
+        <color rgba="0.34902 0.376471 0.4 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0851307 -0.00195041 0.0439499" rpy="-1.5708 -0.510804 1.66277"/>
+      <geometry>
+        <mesh filename="package://assets/m4x8mm_90991a121.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part servocity_idler_bearing_1505_0032_0060 -->
+    <visual>
+      <origin xyz="0.039061 0.0166789 0.0564659" rpy="1.5708 3.66189e-15 0.0916167"/>
+      <geometry>
+        <mesh filename="package://assets/servocity_idler_bearing_1505_0032_0060.obj"/>
+      </geometry>
+      <material name="servocity_idler_bearing_1505_0032_0060_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.039061 0.0166789 0.0564659" rpy="1.5708 3.66189e-15 0.0916167"/>
+      <geometry>
+        <mesh filename="package://assets/servocity_idler_bearing_1505_0032_0060.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link tm26_251_p07_p_rail_from_last_year -->
+  <link name="tm26_251_p07_p_rail_from_last_year">
+    <inertial>
+      <origin xyz="0.00569184 0.016096 -0.0406523" rpy="0 0 0"/>
+      <mass value="0.49058"/>
+      <inertia ixx="0.00159427" ixy="-0.000462324" ixz="-0.000777277" iyy="0.00324645" iyz="-0.000320661" izz="0.00310404"/>
+    </inertial>
+    <!-- Part tm26_251_p19_a_pla_end_support -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p19_a_pla_end_support.obj"/>
+      </geometry>
+      <material name="tm26_251_p19_a_pla_end_support_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p19_a_pla_end_support.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part 7549k57_lead_screw -->
+    <visual>
+      <origin xyz="0.0803998 -4.28824e-15 -0.0390882" rpy="1.5708 -1.83408e-15 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/7549k57_lead_screw.obj"/>
+      </geometry>
+      <material name="7549k57_lead_screw_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0803998 -4.28824e-15 -0.0390882" rpy="1.5708 -1.83408e-15 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/7549k57_lead_screw.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p13_a_pla_force_distributor_strip -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p13_a_pla_force_distributor_strip.obj"/>
+      </geometry>
+      <material name="tm26_251_p13_a_pla_force_distributor_strip_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p13_a_pla_force_distributor_strip.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p03_p_3d_print_inside_part -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p03_p_3d_print_inside_part.obj"/>
+      </geometry>
+      <material name="tm26_251_p03_p_3d_print_inside_part_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p03_p_3d_print_inside_part.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p12_a_static_tpu_gripper_strip -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p12_a_static_tpu_gripper_strip.obj"/>
+      </geometry>
+      <material name="tm26_251_p12_a_static_tpu_gripper_strip_material">
+        <color rgba="0.34902 0.376471 0.4 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p12_a_static_tpu_gripper_strip.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p02_w_top_aluminum_plate -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p02_w_top_aluminum_plate.obj"/>
+      </geometry>
+      <material name="tm26_251_p02_w_top_aluminum_plate_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p02_w_top_aluminum_plate.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm25_250_p03_a_oil_embedded_flange_sleeve_bearing -->
+    <visual>
+      <origin xyz="-0.06947 -0.0149375 0.000599506" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_250_p03_a_oil_embedded_flange_sleeve_bearing.obj"/>
+      </geometry>
+      <material name="tm25_250_p03_a_oil_embedded_flange_sleeve_bearing_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.06947 -0.0149375 0.000599506" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm25_250_p03_a_oil_embedded_flange_sleeve_bearing.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p17_m_motor_to_threaded_rod_adabpter -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p17_m_motor_to_threaded_rod_adabpter.obj"/>
+      </geometry>
+      <material name="tm26_251_p17_m_motor_to_threaded_rod_adabpter_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p17_m_motor_to_threaded_rod_adabpter.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p01_w_bottom_aluminum_plate -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p01_w_bottom_aluminum_plate.obj"/>
+      </geometry>
+      <material name="tm26_251_p01_w_bottom_aluminum_plate_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p01_w_bottom_aluminum_plate.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part microcontroller_cover -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/microcontroller_cover.obj"/>
+      </geometry>
+      <material name="microcontroller_cover_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/microcontroller_cover.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p36_p_lin_actuator_cover -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p36_p_lin_actuator_cover.obj"/>
+      </geometry>
+      <material name="tm26_251_p36_p_lin_actuator_cover_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p36_p_lin_actuator_cover.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p07_p_rail_from_last_year -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p07_p_rail_from_last_year.obj"/>
+      </geometry>
+      <material name="tm26_251_p07_p_rail_from_last_year_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p07_p_rail_from_last_year.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part linearactuator_10403_30mm -->
+    <visual>
+      <origin xyz="-0.0590004 0.00346561 -0.0931365" rpy="1.5708 4.47877e-06 3.2557e-16"/>
+      <geometry>
+        <mesh filename="package://assets/linearactuator_10403_30mm.obj"/>
+      </geometry>
+      <material name="linearactuator_10403_30mm_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0590004 0.00346561 -0.0931365" rpy="1.5708 4.47877e-06 3.2557e-16"/>
+      <geometry>
+        <mesh filename="package://assets/linearactuator_10403_30mm.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_2 -->
+    <visual>
+      <origin xyz="0.0645 0.102435 -0.0142424" rpy="-2.35619 1.98145e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/part_1__2.obj"/>
+      </geometry>
+      <material name="part_1_2_material">
+        <color rgba="0.796078 0.823529 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0645 0.102435 -0.0142424" rpy="-2.35619 1.98145e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/part_1__2.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p15_p_trm_srf -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p15_p_trm_srf.obj"/>
+      </geometry>
+      <material name="tm26_251_p15_p_trm_srf_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p15_p_trm_srf.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_252_p01_p_trm_srf -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_252_p01_p_trm_srf.obj"/>
+      </geometry>
+      <material name="tm26_252_p01_p_trm_srf_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_252_p01_p_trm_srf.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part depth_camera_mount -->
+    <visual>
+      <origin xyz="0.0645 0.102435 -0.0142424" rpy="-2.35619 1.98145e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/depth_camera_mount.obj"/>
+      </geometry>
+      <material name="depth_camera_mount_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0645 0.102435 -0.0142424" rpy="-2.35619 1.98145e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/depth_camera_mount.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p10_p_9403t22_tight_tolerance_high_strength_7075_aluminum_rod -->
+    <visual>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p10_p_9403t22_tight_tolerance_high_strength_7075_aluminum_rod.obj"/>
+      </geometry>
+      <material name="tm26_251_p10_p_9403t22_tight_tolerance_high_strength_7075_aluminum_rod_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0715 -0.014 -0.0015875" rpy="-1.5708 4.47877e-06 1.43045e-19"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p10_p_9403t22_tight_tolerance_high_strength_7075_aluminum_rod.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link tm26_251_p14_p_threaded__bearing -->
+  <link name="tm26_251_p14_p_threaded__bearing">
+    <inertial>
+      <origin xyz="0.044052 -0.000578517 -0.0847547" rpy="0 0 0"/>
+      <mass value="0.156359"/>
+      <inertia ixx="2.32731e-05" ixy="4.8303e-07" ixz="-1.47805e-05" iyy="0.00025898" iyz="-2.5603e-08" izz="0.000252979"/>
+    </inertial>
+    <!-- Part tm26_251_p06_a_pla_part_of_moving_finger -->
+    <visual>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p06_a_pla_part_of_moving_finger.obj"/>
+      </geometry>
+      <material name="tm26_251_p06_a_pla_part_of_moving_finger_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p06_a_pla_part_of_moving_finger.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p11_p_6232k31_high_load_linear_ball_bearing -->
+    <visual>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p11_p_6232k31_high_load_linear_ball_bearing.obj"/>
+      </geometry>
+      <material name="tm26_251_p11_p_6232k31_high_load_linear_ball_bearing_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p11_p_6232k31_high_load_linear_ball_bearing.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p14_p_threaded__bearing -->
+    <visual>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p14_p_threaded__bearing.obj"/>
+      </geometry>
+      <material name="tm26_251_p14_p_threaded__bearing_material">
+        <color rgba="0.945098 0.364706 0.184314 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p14_p_threaded__bearing.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p16_w_mobile_gripper_cover_aluminum -->
+    <visual>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p16_w_mobile_gripper_cover_aluminum.obj"/>
+      </geometry>
+      <material name="tm26_251_p16_w_mobile_gripper_cover_aluminum_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p16_w_mobile_gripper_cover_aluminum.obj"/>
+      </geometry>
+    </collision>
+    <!-- Part tm26_251_p05_a_tpu_part_of_moving_finger -->
+    <visual>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p05_a_tpu_part_of_moving_finger.obj"/>
+      </geometry>
+      <material name="tm26_251_p05_a_tpu_part_of_moving_finger_material">
+        <color rgba="0.34902 0.376471 0.4 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.012 0.01335 0.0102358" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/tm26_251_p05_a_tpu_part_of_moving_finger.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from tm26_251_p07_p_rail_from_last_year to tm26_251_p14_p_threaded__bearing -->
+  <joint name="gripper" type="prismatic">
+    <origin xyz="-0.0365001 -0.00065 -0.0135877" rpy="-4.09506e-10 1.57079 3.14159"/>
+    <parent link="tm26_251_p07_p_rail_from_last_year"/>
+    <child link="tm26_251_p14_p_threaded__bearing"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.0752358" upper="0.0647642"/>
+  </joint>
+  <!-- Link shaft_10408_30mm -->
+  <link name="shaft_10408_30mm">
+    <inertial>
+      <origin xyz="3.64655e-11 5.82587e-09 0.0256483" rpy="0 0 0"/>
+      <mass value="0.00168477"/>
+      <inertia ixx="3.17676e-07" ixy="-6.30023e-14" ixz="-3.1617e-16" iyy="3.16321e-07" iyz="-1.96199e-13" izz="2.37119e-08"/>
+    </inertial>
+    <!-- Part shaft_10408_30mm -->
+    <visual>
+      <origin xyz="0 1.38778e-17 -0.035" rpy="-1.5708 -7.78423e-18 2.66914e-18"/>
+      <geometry>
+        <mesh filename="package://assets/shaft_10408_30mm.obj"/>
+      </geometry>
+      <material name="shaft_10408_30mm_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 1.38778e-17 -0.035" rpy="-1.5708 -7.78423e-18 2.66914e-18"/>
+      <geometry>
+        <mesh filename="package://assets/shaft_10408_30mm.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from tm26_251_p07_p_rail_from_last_year to shaft_10408_30mm -->
+  <joint name="linear_actuator" type="prismatic">
+    <origin xyz="-0.0590005 0.00346561 -0.109002" rpy="-3.14159 4.47877e-06 3.52693e-15"/>
+    <parent link="tm26_251_p07_p_rail_from_last_year"/>
+    <child link="shaft_10408_30mm"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.0108655" upper="0.0191345"/>
+  </joint>
+  <!-- Joint from tm25_2405_motor_face_spacer to tm26_251_p07_p_rail_from_last_year -->
+  <joint name="wrist_roll" type="revolute">
+    <origin xyz="-0.0909454 -0.0140346 0.044097" rpy="-1.5708 0.207238 -1.47882"/>
+    <parent link="tm25_2405_motor_face_spacer"/>
+    <child link="tm26_251_p07_p_rail_from_last_year"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from tm25_231_p05_forearm_link to tm25_2405_motor_face_spacer -->
+  <joint name="wrist_pitch" type="revolute">
+    <origin xyz="0.001 0.460327 -0.03925" rpy="5.73712e-16 -8.25721e-16 -3.14159"/>
+    <parent link="tm25_231_p05_forearm_link"/>
+    <child link="tm25_2405_motor_face_spacer"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.615577" upper="3.39868"/>
+  </joint>
+  <!-- Joint from tm25_221_p18_m_four_bar_insert_fixed to tm25_231_p05_forearm_link -->
+  <joint name="elbow" type="revolute">
+    <origin xyz="-6.99441e-15 0.436 -0.0224125" rpy="-2.14687e-14 1.12277e-14 2.0119"/>
+    <parent link="tm25_221_p18_m_four_bar_insert_fixed"/>
+    <child link="tm25_231_p05_forearm_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from motor_mount_same_hieght_new_motor to tm25_221_p18_m_four_bar_insert_fixed -->
+  <joint name="sholder_motor" type="revolute">
+    <origin xyz="0.0376667 -0.082 -0.0717375" rpy="-3.14159 -8.95754e-15 0.198504"/>
+    <parent link="motor_mount_same_hieght_new_motor"/>
+    <child link="tm25_221_p18_m_four_bar_insert_fixed"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from tm26_211_p01_p_linear_rail to motor_mount_same_hieght_new_motor -->
+  <joint name="linear_rail" type="prismatic">
+    <origin xyz="-0.248392 -0.497172 0.224325" rpy="-1.51844 -2.41182e-14 1.5708"/>
+    <parent link="tm26_211_p01_p_linear_rail"/>
+    <child link="motor_mount_same_hieght_new_motor"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.464752" upper="0.0352483"/>
+  </joint>
+</robot>

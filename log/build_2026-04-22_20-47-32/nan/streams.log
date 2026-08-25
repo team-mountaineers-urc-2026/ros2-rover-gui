@@ -1,0 +1,2 @@
+[0.009s] Invoking command in '/home/lenovo/ros2-rover-gui/build/nan': /usr/bin/cmake --build /home/lenovo/ros2-rover-gui/build/nan -- -j8 -l8
+[0.048s] Invoked command in '/home/lenovo/ros2-rover-gui/build/nan' returned '0': /usr/bin/cmake --build /home/lenovo/ros2-rover-gui/build/nan -- -j8 -l8

@@ -1,0 +1,4 @@
+Invoking command in '/home/lenovo/ros2-rover-gui/build/nan': /usr/bin/cmake /home/lenovo/ros2-rover-gui/node_modules/nan -DCMAKE_INSTALL_PREFIX=/home/lenovo/ros2-rover-gui/install/nan
+Invoked command in '/home/lenovo/ros2-rover-gui/build/nan' returned '0': /usr/bin/cmake /home/lenovo/ros2-rover-gui/node_modules/nan -DCMAKE_INSTALL_PREFIX=/home/lenovo/ros2-rover-gui/install/nan
+Invoking command in '/home/lenovo/ros2-rover-gui/build/nan': /usr/bin/cmake --build /home/lenovo/ros2-rover-gui/build/nan -- -j8 -l8
+Invoked command in '/home/lenovo/ros2-rover-gui/build/nan' returned '0': /usr/bin/cmake --build /home/lenovo/ros2-rover-gui/build/nan -- -j8 -l8

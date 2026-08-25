@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="manipulator_2025">
+    <link name="world"/>
+    <link name="base_link">
+        </link>
+
+    <link name="linear_rail">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>  
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/linear_rail.obj" scale="1. 1. 1."/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>  
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/linear_rail.obj" scale="1. 1. 1."/> </geometry>
+        </collision>
+    </link>
+
+    <link name="arm_base">
+        <visual>
+            <origin xyz="0.001 0 -0.09710" rpy="0 0 0"/>  
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/arm_base.obj" scale="1. 1. 1."/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.001 0 -0.09710" rpy="0 0 0"/>  
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/arm_base.obj" scale="1. 1. 1."/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="lower_arm">
+        <visual>
+            <origin xyz="0.001 0 -0.09710" rpy="0 0 0"/>  
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/lower_arm.obj" scale="1. 1. 1."/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.001 0 -0.09710" rpy="0 0 0"/>  
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/lower_arm.obj" scale="1. 1. 1."/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="upper_arm">
+        <visual>
+            <origin xyz="0.05282 0 -0.53102" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/upper_arm.obj" scale="1. 1. 1."/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.05282 0 -0.53102" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/upper_arm.obj" scale="1. 1. 1."/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="pitch_control">
+        <visual>
+            <origin xyz="0.41474 0.05269 -0.25621" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/pitch_control.obj" scale="1. 1. 1."/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.41474 0.05269 -0.25621" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/pitch_control.obj" scale="1. 1. 1."/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="claw_rotator">
+        <visual>
+            <origin xyz="0.34539 0 -0.40613" rpy="0 0.440230 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/RMD-X6-V3.obj" scale="1. 1. 1."/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.34539 0 -0.40613" rpy="0 0.440230 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/RMD-X6-V3.obj" scale="1. 1. 1."/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="end_effector">
+        <visual>
+            <origin xyz="0.34539 0 -0.40613" rpy="0 0.440230 0"/>  
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/end_effector.obj" scale="1. 1. 1."/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.34539 0 -0.40613" rpy="0 0.440230 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/end_effector.obj" scale="1. 1. 1."/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="mobile_claw">
+        <visual>
+            <origin xyz="0.34539 0 -0.40613" rpy="0 0.440230 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/mobile_claw.obj" scale="1. 1. 1."/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.34539 0 -0.40613" rpy="0 0.440230 0"/>
+            <geometry>
+                <mesh filename="/home/urc/ros2-rover-gui/public/models/manipulator/meshes/mobile_claw.obj" scale="1. 1. 1."/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="world_to_base" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        <parent link="world" />
+        <child link="base_link" />
+    </joint>
+
+    <joint name="base_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        <parent link="base_link" />
+        <child link="linear_rail" />
+    </joint>
+
+    <joint name="joint_arm_base" type="prismatic">
+        <parent link="linear_rail"/>
+        <child link="arm_base"/>
+        <origin xyz="-0.001 0 0.09710" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-0.22747" upper="0.162" effort="80" velocity="1.0"/>
+    </joint>
+    
+    <joint name="joint_lower_arm" type="revolute">
+        <parent link="arm_base"/>
+        <child link="lower_arm"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-1.451942" upper="1.68965065" effort="80" velocity="1.0"/>
+    </joint>
+
+    <joint name="joint_upper_arm" type="revolute">
+        <parent link="lower_arm"/>
+        <child link="upper_arm"/>
+        <origin xyz="-0.05182 0 0.43392" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-0.914217" upper="2.22737565" effort="50" velocity="1.0"/>
+    </joint>
+
+    <joint name="joint_pitch_control" type="revolute">
+        <parent link="upper_arm"/>
+        <child link="pitch_control"/>
+        <origin xyz="-0.36192 -0.05269 -0.27481" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-2.670917" upper="3.008905" effort="10" velocity="1.0"/>
+    </joint>
+
+    <joint name="joint_claw_rotator" type="revolute">
+        <parent link="pitch_control"/>
+        <child link="claw_rotator"/>
+        <origin xyz="-0.07176 0.05269 -0.03657" rpy="0 -0.440230 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="1.0"/>
+    </joint>
+
+    <joint name="joint_end_effector" type="fixed">
+        <parent link="claw_rotator"/>
+        <child link="end_effector"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="0" upper="0.1" effort="10" velocity="1.0"/>
+    </joint>
+
+    <joint name="joint_mobile_claw" type="prismatic">
+        <parent link="end_effector"/>
+        <child link="mobile_claw"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-0.07276" upper="0.06809" effort="10" velocity="1.0"/>
+    </joint>  
+</robot>

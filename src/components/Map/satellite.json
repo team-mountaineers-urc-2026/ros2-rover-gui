@@ -1,0 +1,43 @@
+{
+    "version": 8,
+    "id": "satellite",
+    "name": "Satellite",
+    "sources": {
+  "satellite": {
+    "type": "raster",
+    "tiles": [
+      "http://127.0.0.1:8080/tiles/{z}/{x}/{y}.jpg"
+    ],
+    "tileSize": 256
+  }
+},
+    "layers": [
+      {
+        "id": "Satellite",
+        "type": "raster",
+        "source": "satellite",
+        "minzoom": 0,
+        "layout": {
+          "visibility": "visible"
+        },
+        "paint": {
+          "raster-opacity": 1
+        },
+        "filter": [
+          "all"
+        ]
+      }
+    ],
+    "metadata": {
+      "maptiler:copyright": "You are licensed to use the style or its derivate for serving map tiles exclusively with MapTiler Server or MapTiler Cloud and in accordance with their licenses and terms. If you plan to use the style in a different way, contact us at sales@maptiler.com."
+    },
+    "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=6iodqdahM5ZxV3S69uUq",
+    "sprite": "https://api.maptiler.com/maps/satellite/sprite",
+    "bearing": 0,
+    "pitch": 0,
+    "center": [
+      0,
+      0
+    ],
+    "zoom": 1
+  }
